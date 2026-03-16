@@ -1,0 +1,25 @@
+[project]
+name = "ev-adoption-ml"
+version = "0.1.0"
+description = "Electric Vehicle Adoption Prediction"
+requires-python = ">=3.10"
+
+dependencies = [
+    "pandas",
+    "numpy",
+    "scikit-learn",
+    "mlflow",
+    "torch",
+    "fastapi",
+    "uvicorn",
+    "pydantic",
+    "pytest",
+    "pandera",
+    "ruff"
+]
+
+[tool.ruff]
+line-length = 100
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
